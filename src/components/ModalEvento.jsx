@@ -50,7 +50,7 @@ const ModalEvento = ({ mostrarModal = false, setMostrarModal, guardarEvento, edi
             <ModalBody>
                 <Form>
                     <FormGroup>
-                        <Label>Fecha del Evento</Label>
+                        <Label className="fw-bold fst-italic">Fecha del Evento</Label>
                         <Input
                             type="date"
                             name="fechaEvento"
@@ -59,15 +59,15 @@ const ModalEvento = ({ mostrarModal = false, setMostrarModal, guardarEvento, edi
                         />
                     </FormGroup>
                     <FormGroup>
-                        <Label>Lugar del Evento</Label>
+                        <Label className="fw-bold fst-italic">Lugar del Evento</Label>
                         <Input name="lugarEvento" onChange={(e) => actualizarDato(e)} value={evento.lugarEvento} />
                     </FormGroup>
                     <FormGroup>
-                        <Label>Descripcion del Evento</Label>
+                        <Label className="fw-bold fst-italic">Descripcion del Evento</Label>
                         <Input name="descripcionEvento" onChange={(e) => actualizarDato(e)} value={evento.descripcionEvento} />
                     </FormGroup>
                     <FormGroup>
-                        <Label>Precio del Evento</Label>
+                        <Label className="fw-bold fst-italic">Precio del Evento</Label>
                         <Input type="number" name="precio" onChange={(e) => actualizarDato(e)} value={evento.precio} />
                     </FormGroup>
 
