@@ -19,10 +19,10 @@ export const Ingresar = () => {
     }
     return (
         <div className="ingresar-container">
-            <h2>Login</h2>
+            <h2 >Login</h2>
             <Form>
                 <FormGroup>
-                    <Label for="username">Usuario:</Label>
+                    <Label className="fw-bold fst-italic" for="username">Usuario:</Label>
                     <Input
                         type="text"
                         id="username"
@@ -31,7 +31,7 @@ export const Ingresar = () => {
                     />
                 </FormGroup>
                 <FormGroup>
-                    <Label for="email">Email:</Label>
+                    <Label className="fw-bold fst-italic" for="email">Email:</Label>
                     <Input
                         type="email"
                         id="email"
